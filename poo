@@ -1,0 +1,38 @@
+<?php
+
+class exemplo{
+    private $num1;
+    private $num2;
+    private $num3;
+
+    public function getNum1(){
+        return $this->num1;
+    }
+    public function setNum1($num1){
+        $this->num1 = $num1;
+    }
+    public function getNum2(){
+        return $this->num2;
+    }
+    public function setNum2($num2){
+        $this->num2 = $num2;
+    }
+    public function getNum3(){
+        return $this->num3;
+    }
+    public function setNum3($num3){
+        $this->num3 = $num3;
+    }
+    public function multiplica(){
+        return $this->num1*$this->num2*$this->num3;
+    }
+}
+
+$a = new exemplo();
+$a->setNum1(2);
+$a->setNum2(3);
+$a->setNum3(4);
+echo ($a->getNum1().PHP_EOL);
+echo ($a->getNum2().PHP_EOL);
+echo ($a->getNum3().PHP_EOL);
+echo ($a->multiplica().PHP_EOL);
