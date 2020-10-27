@@ -1,0 +1,13 @@
+<?php
+$siglas = ['ES', 'MG', 'RJ', 'SP'];
+$estados = ['São Paulo', 'Rio de Janeiro', 'Minas Gerais', 'Espírito Santo'];
+$estados_com_sigla = [];
+
+
+for ($i = 0;$i<sizeof($siglas); $i++) {
+    $estados_com_sigla[$siglas[$i]] = $estados[3-$i];
+}
+
+foreach ($estados_com_sigla as $key => $value){
+    echo $key . " - " . $value . PHP_EOL;
+}
